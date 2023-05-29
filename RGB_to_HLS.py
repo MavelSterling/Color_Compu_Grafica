@@ -61,8 +61,8 @@ G = 255
 B = 50 
 
 # Llamar a la función rgb_to_hls
-h, s, v = rgb_to_hls(R, G, B)
+h, l, s = rgb_to_hls(R, G, B)
 
 # Imprimir los resultados
 print("Valores de RGB:", R, G, B)
-print("Valores de HSV:", h, s, v)
+print("Valores de HLV:", h, l, s)
