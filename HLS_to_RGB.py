@@ -47,7 +47,7 @@ def hls_to_rgb(h, l, s):
     return r, g, b
 
 
-# Definir los valores HSV del punto 2 b.
+# Definir los valores HLS del punto 2 b.
 h = 88
 l = 0.5980
 s = 1
