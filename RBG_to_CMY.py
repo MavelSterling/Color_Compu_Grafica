@@ -27,9 +27,9 @@ def rgb_to_cmy(r, g, b):
     return c, m, y
 
 # Definir los valores RGB del punto 3. a.
-R = 160
-G = 255
-B = 50 
+R = 80
+G = 35
+B = 98
 
 # Llamar a la función rgb_to_cmy
 c, m, y = rgb_to_cmy(R, G, B)
