@@ -22,13 +22,13 @@ def cmy_to_rgb(c, m, y):
     return r, g, b
 
 # Definir los valores CMY del punto 3 b.
-h = 88
-l = 0.5980
-s = 1
+c = 0.3529
+m = 0.8039
+y = 0.5294
 
-# Llamar a la función hls_to_rgb
-r, g, b = hls_to_rgb(h, l, s)
+# Llamar a la función cmy_to_rgb
+r, g, b = cmy_to_rgb(c, m, y)
 
 # Imprimir los resultados
-print("Valores de HLS:", h, l, s)
+print("Valores de CMY:", c, m, y)
 print("Valores de RGB:", r, g, b)
