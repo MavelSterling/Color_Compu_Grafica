@@ -57,5 +57,5 @@ B = 12
 h, s, v = rgb_to_hsv(R, G, B)
 
 # Imprimir los resultados
-print("Valores de RGB:", red, green, blue)
+print("Valores de RGB:", R, G, B)
 print("Valores de HSV:", h, s, v)
