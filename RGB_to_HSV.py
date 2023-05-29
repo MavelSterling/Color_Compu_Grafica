@@ -5,9 +5,9 @@ def rgb_to_hsv(r, g, b):
     b = max(0, min(255, b))
 
     # Normalizar los valores de R, G y B al rango de 0 a 1
-    r = round(r / 255.0, 5)
-    g = round(g / 255.0, 5)
-    b = round(b / 255.0, 5)
+    r = round(r / 255, 5)
+    g = round(g / 255, 5)
+    b = round(b / 255, 5)
 
     # Calcular el valor máximo y el valor mínimo de las componentes R, G y B
     max_val = max(r, g, b)
@@ -49,12 +49,12 @@ def rgb_to_hsv(r, g, b):
     return h, s, v
 
 # Definir los valores RGB del punto 1. a.
-red = 12 
-green = 12 
-blue = 12 
+R = 12 
+G = 12 
+B = 12 
 
 # Llamar a la función rgb_to_hsv
-h, s, v = rgb_to_hsv(red, green, blue)
+h, s, v = rgb_to_hsv(R, G, B)
 
 # Imprimir los resultados
 print("Valores de RGB:", red, green, blue)
