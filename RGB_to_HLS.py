@@ -55,7 +55,7 @@ def rgb_to_hls(r, g, b):
     # Retornar los valores de H, L y S como resultado de la conversión
     return h, l, s
 
-# Definir los valores RGB del punto 1. a.
+# Definir los valores RGB del punto 2. a.
 R = 160
 G = 255
 B = 50 
