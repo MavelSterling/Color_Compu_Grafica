@@ -11,7 +11,7 @@ def hsv_to_rgb(h, s, v):
     print(f"Paso 2: C = {c}")
 
     # Calcular el valor de X
-    x = c * (1 - abs((h / 60) % 2 - 1))
+    x = c * (1 - abs(((h / 60) % 2) - 1))
     print(f"Paso 3: X = {x}")
 
     # Calcular los valores de m (valor mínimo) y rgb_base (componentes de RGB sin ajuste)
