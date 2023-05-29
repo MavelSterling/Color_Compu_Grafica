@@ -20,7 +20,7 @@ def rgb_to_hls(r, g, b):
 
     # Calcular el valor de L (luminosidad) como (max_val + min_val) / 2
     l = round((max_val + min_val) / 2, 5)
-    print(f"Paso 4: luminosidad = {l}")
+    print(f"Paso 4: luminosidad = {l*100}%")
 
 
     # Si max_val es igual a min_val, asignar H y S como 0 y retornar el resultado
@@ -33,7 +33,7 @@ def rgb_to_hls(r, g, b):
     else:
         s = round((max_val - min_val) / (2 - max_val - min_val), 5)
     
-    print(f"Paso 5: saturación = {s}")
+    print(f"Paso 5: saturación = {s*100} %")
 
     # Determinar qué componente es el mayor para calcular el ángulo de H
     if max_val == r:
