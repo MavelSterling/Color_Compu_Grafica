@@ -44,7 +44,6 @@ def hls_to_rgb(h, l, s):
     g = max(0, min(255, g))
     b = max(0, min(255, b))
     print(f"Paso 5: R = {r}, G = {g}, B = {b}")
-
     return r, g, b
 
 
