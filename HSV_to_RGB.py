@@ -3,12 +3,16 @@ def hsv_to_rgb(h, s, v):
     h = max(0, min(360, h))
     s = max(0, min(1, s))
     v = max(0, min(1, v))
+    print(f"Paso 1: H = {h}, S = {s}, V = {v}")
+
 
     # Calcular el valor de C (Chroma)
     c = v * s
+    print(f"Paso 2: C = {c}")
 
     # Calcular el valor de X
     x = c * (1 - abs((h / 60) % 2 - 1))
+    print(f"Paso 3: X = {x}")
 
     # Calcular los valores de m (valor mínimo) y rgb_base (componentes de RGB sin ajuste)
     m = v - c
@@ -24,10 +28,14 @@ def hsv_to_rgb(h, s, v):
         rgb_base = (x, 0, c)
     else:
         rgb_base = (c, 0, x)
+    print(f"Paso 4: m = {m}, rgb_base = {rgb_base}")
+
 
     # Ajustar los componentes de RGB con el valor mínimo (m)
     r, g, b = (rgb_base[0] + m, rgb_base[1] + m, rgb_base[2] + m)
+    print(f"Paso 5: R = {r}, G = {g}, B = {b}")
 
+    
     # Asegurar que los valores de R, G y B estén en el rango correcto (0 a 1)
     r = max(0, min(1, r))
     g = max(0, min(1, g))
@@ -37,6 +45,7 @@ def hsv_to_rgb(h, s, v):
     r = int(r * 255)
     g = int(g * 255)
     b = int(b * 255)
+    print(f"Paso 6: R = {r}, G = {g}, B = {b}")
 
     # Devolver los valores de R, G y B como resultado de la conversión
     return r, g, b
