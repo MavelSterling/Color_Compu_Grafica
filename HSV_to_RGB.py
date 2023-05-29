@@ -1,12 +1,12 @@
 def hsv_to_rgb(h, s, v):
-    # Asegurar que los valores de H, S y V estén en el rango correcto
+    # Asegurar que los valores de H, S y V estén en el rango de cada componente
     h = max(0, min(360, h))
     s = max(0, min(1, s))
     v = max(0, min(1, v))
     print(f"Paso 1: H = {h}, S = {s}, V = {v}")
 
 
-    # Calcular el valor de C (Chroma)
+    # Calcular el valor de C (intensidad cromática)
     c = v * s
     print(f"Paso 2: C = {c}")
 
